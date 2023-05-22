@@ -2,6 +2,7 @@ public class IntroductieClass {
     private String naam;
     private int leeftijd;
     private String geslacht;
+    
     public IntroductieClass(String naam, int leeftijd, String geslacht) {
         this.naam = naam;
         this.leeftijd = leeftijd;
@@ -11,7 +12,6 @@ public class IntroductieClass {
     public String getNaam() {
         return naam;
     }
-
     public void setNaam(String naam) {
         this.naam = naam;
     }
@@ -19,7 +19,6 @@ public class IntroductieClass {
     public int getLeeftijd() {
         return leeftijd;
     }
-
     public void setLeeftijd(int leeftijd) {
         this.leeftijd = leeftijd;
     }
@@ -27,7 +26,6 @@ public class IntroductieClass {
     public String getGeslacht() {
         return geslacht;
     }
-
     public void setGeslacht(String geslacht) {
         this.geslacht = geslacht;
     }
