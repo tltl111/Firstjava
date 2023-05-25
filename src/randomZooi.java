@@ -15,6 +15,7 @@ public class randomZooi {
     int y = Integer.parseInt(notYetAnInty);
 
     schaakbord s1 = new schaakbord(x, y);
+    // schaakbord s1 = new schaakbord(8, 8);
     s1.print();
 
     input.close();
