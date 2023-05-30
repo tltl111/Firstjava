@@ -10,5 +10,7 @@ public class Persoon {
     }
     public void spreek() {
         System.out.println("Ik ben een persoon.");
+        System.out.println("Ik ben een persoon." + leeftijd);
+        System.out.println("Ik ben een persoon." + lengte);
     }
 }

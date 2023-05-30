@@ -8,6 +8,7 @@ public class Leraar extends Persoon {
 
     public void spreek() {
         System.out.println("Ik ben een leraar.");
+        System.out.println("Ik ben een leraar." + salaris);
     }
 
 }
