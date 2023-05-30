@@ -2,9 +2,9 @@ public class vehicle {
     
     private String brand;
     private String model;
-    private String year;
+    private int year;
 
-    public vehicle(String brand, String model, String year) {
+    public vehicle(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
         this.year = year;
@@ -16,16 +16,16 @@ public class vehicle {
     public String getModel() {
         return model;
     }
-    public String getYear() {
+    public int getYear() {
         return year;
     }
-    public void setBrand() {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
-    public void setModel() {
+    public void setModel(String model) {
         this.model = model;
     }
-    public void setYear() {
+    public void setYear(int year) {
         this.year = year;
     }
 }
