@@ -4,12 +4,14 @@ import java.util.Scanner;
 public class Oritoets {
     public static void main(String[] args) {
         
-        int number = antwoord();        
+        int number = antwoord();
 
         int resultSomOneven = somOneven(number);
         int resultSomEven = somEven(number);
 
         verschil(resultSomOneven, resultSomEven);
+
+        eersteIntOverflow();
     }
 
 
@@ -66,4 +68,19 @@ public class Oritoets {
         int verschil = Math.abs(oneven - even);
         System.out.println("Verschil tussen twee sommen is " + verschil);
     }
+
+    public static void eersteIntOverflow() {
+    int getal = 1;
+    int som = 0;
+    try {
+        while (true) {
+            som = Math.addExact(som, getal);
+            getal += 2;
+        }
+    } catch (ArithmeticException e) {
+        System.out.println();
+        System.out.println("Eerste overflow bij getal: " + getal);
+        System.out.println("Hoogste getal dat je kunt gebruiken: " + (getal - 1));
+    }
+}
 }
