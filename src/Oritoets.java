@@ -72,6 +72,8 @@ public class Oritoets {
     public static void eersteIntOverflow() {
     int getal = 1;
     int som = 0;
+    long getalL = 1;
+    long somL = 0;
     try {
         while (true) {
             som = Math.addExact(som, getal);
@@ -81,6 +83,16 @@ public class Oritoets {
         System.out.println();
         System.out.println("Eerste overflow bij getal: " + getal);
         System.out.println("Hoogste getal dat je kunt gebruiken: " + (getal - 1));
+    }
+    try {
+        while (true) {
+            somL = Math.addExact(getalL, somL);
+            getalL += 2;
+        }
+    } catch (ArithmeticException e) {
+        System.out.println();
+        System.out.println("Eerste overflow bij long getal: " + getalL);
+        System.out.println("Hoogste long getal dat je kunt gebruiken: " + (getalL - 1));
     }
 }
 }
