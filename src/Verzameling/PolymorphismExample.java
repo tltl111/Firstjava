@@ -1,3 +1,4 @@
+package Verzameling;
 abstract class Animal {
     public abstract void makeSound();
 }
@@ -18,12 +19,12 @@ class Cat extends Animal {
 
 public class PolymorphismExample {
     public static void main(String[] args) {
-        Animal animal1 = new Dog(); // Dog object assigned to an Animal reference
-        Animal animal2 = new Cat(); // Cat object assigned to an Animal reference
+        Animal animal1 = new Dog();
+        Animal animal2 = new Cat();
         Dog Fluffy = new Dog();
 
-        animal1.makeSound(); // Calls Dog's makeSound method
-        animal2.makeSound(); // Calls Cat's makeSound method
+        animal1.makeSound();
+        animal2.makeSound();
         Fluffy.makeSound();
     }
 }
